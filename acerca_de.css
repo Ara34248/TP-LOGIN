@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #000000);
+    color: #fff;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-link {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav input[type="search"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.houses {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que las casas se ajusten automáticamente */
+    justify-content: center; /* Centra horizontalmente las casas */
+    margin-top: 100px; /* Espacio para evitar que el menú tape las casas */
+}
+
+.house {
+    flex: 0 0 auto; /* Tamaño automático sin crecimiento ni encogimiento */
+    width: 30%; /* Ancho de cada casa */
+    min-width: 200px; /* Ancho mínimo para evitar que se hagan demasiado pequeñas */
+    margin: 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo semi-transparente */
+    border-radius: 8px;
+    overflow: hidden; /* Oculta contenido que sobresalga */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+.house .background {
+    position: absolute;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+
+.txt {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.txt span {
+    color: gold;
+    font-size: 35px;
+}
+
+.txt h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.txt p {
+    font-size: 14px;
+    margin: 0;
+}
+

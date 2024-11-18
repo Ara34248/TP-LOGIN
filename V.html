@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="V.css">
+</head>
+<body>
+    <div class="question-container">
+        <h2>Recuperar Contraseña</h2>
+        <form action="/verify-answer" method="POST">
+            <label for="question1">¿Cuál es tu nombre?</label>
+            <input type="text" id="question1" name="question1" required>
+
+            <label for="question2">¿Cuál es tu apellido?</label>
+            <input type="text" id="question2" name="question2" required>
+
+            <label for="question3">¿Cuál es tu fecha de nacimiento?</label>
+            <input type="date" id="question3" name="question3" required>
+
+            <label for="question4">¿Dónde naciste?</label>
+            <input type="text" id="question4" name="question4" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
